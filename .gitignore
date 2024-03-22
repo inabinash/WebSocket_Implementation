@@ -1,6 +1,6 @@
 # Production
 build
-
+Backend/node_modules/
 
 # Testing
 coverage
