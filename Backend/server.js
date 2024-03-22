@@ -1,6 +1,13 @@
 const express = require('express')
 const app = express()
 
-app.use("/", (req,res)=>{
-    res.send("Hello From WS server although I am not WS yet" , 200);
-})
+app.get('/', (req, res) => {
+    // Sending "Hello" response
+    res.send('Hello');
+});
+
+// Starting the server
+const PORT =  3000;
+app.listen(PORT, () => {
+    console.log(`Server is listening on port ${PORT}`);
+});
